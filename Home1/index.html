@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="Css/css.css" />
+<script src="js/js.js"></script>
+<script>
+	
+		var ImgArr=new Array();
+	ImgArr[0]="Picture/color1.png";
+	ImgArr[1]="Picture/color2.png";
+	ImgArr[2]="Picture/color3.png";
+	ImgArr[3]="Picture/color4.png";
+	
+	var t=0;
+	function CHANGE()
+	{
+		var IMG=document.getElementById("changecolor");
+		IMG.src=ImgArr[t];
+		t++;
+		if(t==4)
+		{
+			t=0;
+		}
+		setTimeout("CHANGE()",3000);
+	}
+	
+	
+</script>
+
+<script>
+		window.onload=function()
+	{
+		var oDiv=document.getElementsByClassName("liall");
+		oDiv.onmouseover=function()
+		{
+			startMove(100);
+		}
+		oDiv.onmouseout=function()
+		{
+			startMove(30);
+		}
+	}
+</script>
+<title>Page</title>
+<script>
+	
+</script>
+</head>
+
+<body onload="CHANGE()">
+<div class="public-head">
+	<div class="index-content">
+    <img src="Picture/logo.png" width="70" height="70" /> 
+    <div><h1>Lucky Store</h1></div>
+    <hr/>
+    <p class="p1">E-COMMERCE&nbsp;UI&nbsp;PACK</p>
+    </div>
+</div>
+<div class="public-middle">
+	<ul>
+    	<li style="padding-top:14px;"><img src="Picture/logo.png" width="72" height="72" /></li>
+        <li style="padding-top:30px;">MEN<div class="triangle" id="triangle" onmouseover="List()" onmouseout="List1"></div></li>
+        <li style="width:200px;padding-top:30px;">WOMEN<div class="triangle" onmouseover="List()" style="margin-top:-23px;margin-left:160px;"></div></li>
+        <li style="padding-top:30px;">SALE!</li>
+        <li style="padding-top:30px;">INFO</li>
+        <li style="width:260px;padding-top:30px;">CONTRACTS</li>
+        <li style="padding-top:14px;"><img src="Picture/search.png" width="72" height="72" /></li>
+        <li style="padding-top:14px;"><img src="Picture/cart.png" width="72" height="72" /></li>
+        <li style="padding-top:14px;"><img src="Picture/profile.png" width="72" height="72" /></li>
+    </ul>
+</div>
+
+<div id="public-middle1">
+	<div><img id="changecolor" src="Picture/color1.png"/></div>
+</div>
+
+<div class="public-middle2">
+	<div class="public-rectangles">
+   		<ul class="ul1">
+            <li class="liall">Lucky Button</li>
+            <li class="liall">Lucky Button</li>
+            <li class="liall">Lucky Button</li>
+            <li class="liall">Lucky Button</li>
+   	 	</ul>
+        
+    	<ul class="ul2">
+            <li class="liall">Hover Button</li>
+            <li class="liall">Hover Button</li>
+            <li class="liall">Hover Button</li>
+            <li class="liall">Hover Button</li>
+    	</ul>
+        
+    	<ul class="ul2">
+            <li class="liall">Pressed Button</li>
+            <li class="liall">Pressed Button</li>
+            <li class="liall">Pressed Button</li>
+            <li class="liall">Pressed Button</li>
+    	</ul>
+ 	</div>
+    
+    
+    <div class="public-checkarea">
+    	<div class="first">
+            <ul>
+                <li class="checkbox" style="color:gray;"><input class="size" type="checkbox" disabled="true" />Unchecked Disabled</li>
+                <li class="checkbox" style="color:gray;"><input class="size" type="checkbox" checked="checked" disabled="true" />Checked Disabled</li>
+                <li class="checkbox"><input class="size" type="checkbox" checked=""  />Checkbox Unchecked</li>
+                <li class="checkbox"><input class="size" type="checkbox" checked="checked" />Checkbox Hover</li>
+                <li class="checkbox" style="color:green;"><input class="size" type="checkbox" checked="checked" />Checkbox Checked</li>
+            </ul>
+    	</div>
+        
+        <div class="second">
+        	<ul>
+                <li class="radio" style="color:gray;"><input class="size" type="radio" disabled="true" />Radio Off Disabled</li>
+                <li class="radio" style="color:gray;"><input class="size" type="radio" checked="checked" disabled="true" />Radio On Disabled</li>
+                <li class="radio"><input type="radio" disabled="true" class="size" />Radio Off</li>
+                <li class="radio"><input class="size" type="radio" checked="checked" />Radio Hover</li>
+                <li class="radio" style="color:green;"><input class="size" type="radio" checked="checked" />Radio On</li>
+            </ul>
+        </div>
+        
+        <div class="third">
+        	<ul>
+                <li><input type="text" class="textline" name="TEXT" value="Input Static" disabled="true"/></li>
+                <li><input type="text" class="textline" name="TEXT" value="Input Success" /></li>
+                <li><input type="text" class="textline" name="TEXT" value="Input Error"/></li>
+            </ul>
+        </div>
+        
+        <div class="fourth">
+        	<ul>
+            	<li><img src="Picture/slide1.png" width="320" height="32"/></li>
+                <li><img src="Picture/slide2.png"  width="320" height="32"/></li>
+                <li><img src="Picture/range.png" width="300" height="60"/></li>
+            </ul>
+        </div>
+        
+        <div class="fifth">
+    		<img src="Picture/rec.png" width="1309" height="70"/>
+		</div>
+    </div>
+</div>
+
+<div class="public-color">
+    <img src="Picture/color.png" width="1035" height="100"/>
+</div>
+
+
+<div class="public-tales">
+	<img src="Picture/cartt.png" width="1700" height="688" />
+</div>
+    
+</body>
+</html>
